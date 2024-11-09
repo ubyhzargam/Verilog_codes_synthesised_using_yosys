@@ -2,7 +2,7 @@
 These are verilog codes that are synthesized using open source tool yosys
 
 
-1. FULL ADDER (1 BIT) :
+# 1. FULL ADDER (1 BIT) :
    
    
 a. Full adder code -
@@ -23,19 +23,19 @@ c. Technlogy mapping -
 
 I used a 45nm pdk and typical process to do technology mapping. 
 I created a yosys script instead of giving individual commands. The script is -
-# read design
+ #read design
 read_verilog top.v
-# elaborate design hierarchy
+#elaborate design hierarchy
 hierarchy -check -top top
-# mapping to internal cell library
+#mapping to internal cell library
 synth -top top
-# mapping flip-flops to mycells.lib
+#mapping flip-flops to mycells.lib
 #dfflibmap -liberty NangateOpenCellLibrary_typical.lib
-# mapping logic to mycells.lib
+#mapping logic to mycells.lib
 abc -liberty NangateOpenCellLibrary_typical.lib
-# cleanup
+#cleanup
 clean
-# write synthesized design
+#write synthesized design
 write_verilog -noattr synth.v
 
 I got the following netlist - 
