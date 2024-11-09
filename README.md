@@ -18,6 +18,7 @@ b. Generic logic gate netlist using yosys -
 
 <img width="1470" alt="Screenshot 2024-11-10 at 1 47 14 AM" src="https://github.com/user-attachments/assets/731341ac-6bba-4c05-b617-81865203f821">
 This is generic logic gate, we can map this to a technology. 
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 c. Technlogy mapping - 
 
