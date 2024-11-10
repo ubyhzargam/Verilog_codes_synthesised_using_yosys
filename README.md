@@ -108,7 +108,8 @@ clean<br>
 #Write the current design to a Verilog file<br>
 write_verilog -noattr synth_example.v<br>
 
-![synth 2024-11-11 at 00 03 51](https://github.com/user-attachments/assets/16a26335-7ee8-449a-9680-9e3ebfe7026a)
+<img width="298" alt="Screenshot 2024-11-11 at 12 12 55 AM" src="https://github.com/user-attachments/assets/2b0e954b-a17e-4e9b-8b36-849ed5abaf83">
+
 
 <br>
 <br>
