@@ -120,6 +120,17 @@ Using the command : stat -liberty NangateOpenCellLibrary_typical.lib
 
 <img width="1470" alt="Screenshot 2024-11-11 at 12 08 26 AM" src="https://github.com/user-attachments/assets/b8f6749e-a786-4904-8e58-0c81355ed376">
 
+<br>
+<br>
+
+# 3. FULL ADDER (4 BIT) using structural abstraction :
+
+a. Generic logic netlist - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 23 16 AM" src="https://github.com/user-attachments/assets/18489a2b-d32e-4685-9d19-f5c98d74ba7d">
+
+<br>
+<br>
 
 
 
