@@ -132,7 +132,7 @@ a. Generic logic netlist -
 <br>
 <br>
 
-# 3. FULL ADDER (4 BIT) using dataflow :
+# 4. FULL ADDER (4 BIT) using dataflow :
 
 a. Generic logic netlist - 
 
@@ -155,10 +155,53 @@ c. Area -
 <br>
 <br>
 
+# 5. Edge detector :
 
+a. Generic logic netlist - 
 
+<img width="1470" alt="Screenshot 2024-11-11 at 12 43 47 AM" src="https://github.com/user-attachments/assets/5895f55d-cce2-4256-9618-82a9ad2ba610">
 
+<br>
+<br>
 
+b. Technology mapping - 
+
+<img width="88" alt="Screenshot 2024-11-11 at 12 46 24 AM" src="https://github.com/user-attachments/assets/f242bdb9-9634-4170-89fa-49cced2bb01d">
+
+<br>
+<br>
+
+c. Area - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 51 37 AM" src="https://github.com/user-attachments/assets/3a8ce312-39d5-4701-a22f-7e9afa07651a">
+
+<br>
+<br>
+
+# 6. BCD counter :
+
+a. Generic logic gates - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 54 23 AM" src="https://github.com/user-attachments/assets/e7001db8-bc9c-4c30-bdbb-c47fc49965f7">
+
+<br>
+<br?
+
+b. Technology mapping - 
+
+<img width="159" alt="Screenshot 2024-11-11 at 12 55 54 AM" src="https://github.com/user-attachments/assets/728cbcad-f48f-4d77-96ed-44e38fb1c3b8">
+
+<br>
+<br>
+
+c. Area - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 56 53 AM" src="https://github.com/user-attachments/assets/a047ac17-8f1c-448e-a26e-e62d8f23f645">
+
+<br>
+<br>
+
+# 7. 
 
 
 
