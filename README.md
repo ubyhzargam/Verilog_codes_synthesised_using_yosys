@@ -7,12 +7,12 @@ These are verilog codes that are synthesized using open source tool yosys
    
 a. Full adder code -
    
-module top(a,b, cin, sum, co) ;
-input a,b, cin;
-output sum, co;
-assign sum=a^b^cin;
-assign co=(a&b) | (a&c) | (b&c) ;
-endmodule
+module top(a,b, cin, sum, co) ;<br>
+input a,b, cin;<br>
+output sum, co;<br>
+assign sum=a^b^cin;<br>
+assign co=(a&b) | (a&c) | (b&c) ;<br>
+endmodule<br>
 <br>
 <br>
 
@@ -26,21 +26,21 @@ This is generic logic gate, we can map this to a technology.
 c. Technlogy mapping - 
 
 I used a 45nm pdk and typical process to do technology mapping. 
-I created a yosys script instead of giving individual commands. The script is -
- #read design
-read_verilog top.v
-#elaborate design hierarchy
-hierarchy -check -top top
-#mapping to internal cell library
-synth -top top
-#mapping flip-flops to mycells.lib
-#dfflibmap -liberty NangateOpenCellLibrary_typical.lib
-#mapping logic to mycells.lib
-abc -liberty NangateOpenCellLibrary_typical.lib
-#cleanup
-clean
-#write synthesized design
-write_verilog -noattr synth.v
+I created a yosys script instead of giving individual commands. The script is -<br>
+ #read design<br>
+read_verilog top.v<br>
+#elaborate design hierarchy<br>
+hierarchy -check -top top<br>
+#mapping to internal cell library<br>
+synth -top top<br>
+#mapping flip-flops to mycells.lib<br>
+#dfflibmap -liberty NangateOpenCellLibrary_typical.lib<br>
+#mapping logic to mycells.lib<br>
+abc -liberty NangateOpenCellLibrary_typical.lib<br>
+#cleanup<br>
+clean<br>
+#write synthesized design<br>
+write_verilog -noattr synth.v<br>
 
 I got the following netlist - 
 
