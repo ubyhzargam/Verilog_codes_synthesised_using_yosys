@@ -132,6 +132,32 @@ a. Generic logic netlist -
 <br>
 <br>
 
+# 3. FULL ADDER (4 BIT) using dataflow :
+
+a. Generic logic netlist - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 36 56 AM" src="https://github.com/user-attachments/assets/55c9a973-6845-4b5b-8cec-e18fca41b33b">
+
+<br>
+<br>
+
+b. Technlogy mapping - 
+
+<img width="127" alt="Screenshot 2024-11-11 at 12 38 33 AM" src="https://github.com/user-attachments/assets/ef88c6a1-0333-4cf9-ba34-24a19636c6ee">
+
+<br>
+<br>
+
+c. Area - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 39 27 AM" src="https://github.com/user-attachments/assets/cb4b5b68-3976-4daa-96a6-7b2cfb423e78">
+
+<br>
+<br>
+
+
+
+
 
 
 
