@@ -201,7 +201,32 @@ c. Area -
 <br>
 <br>
 
-# 7. 
+# 7. Carry look ahead adder (4 bit) :
+
+a. Generic logic gate -
+
+<img width="1470" alt="Screenshot 2024-11-11 at 1 00 15 AM" src="https://github.com/user-attachments/assets/5167be3c-912b-4a95-bc35-0afae0f4bab0">
+
+<br>
+<br>
+
+b. Technology mapping - 
+
+<img width="165" alt="Screenshot 2024-11-11 at 1 01 34 AM" src="https://github.com/user-attachments/assets/50821000-d100-4788-aee5-68a3f59a1c3a">
+
+<br>
+<br>
+
+c. Area - 
+
+<img width="1470" alt="Screenshot 2024-11-11 at 1 02 19 AM" src="https://github.com/user-attachments/assets/cd73355c-a13f-4d37-904e-34cd1ec71e5f">
+
+<br>
+<br>
+
+# 8 
+
+
 
 
 
