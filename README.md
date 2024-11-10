@@ -46,6 +46,79 @@ I got the following netlist -
 
 <img width="1470" alt="Screenshot 2024-11-10 at 3 12 53 AM" src="https://github.com/user-attachments/assets/407682e9-d489-475e-a390-94cd7820347e">
 
+# 2. 4:1 demux
+
+a. Code - <br>
+
+module demux(out0,out1,out2,out3,s1,s0,in); <br>
+output out0,out1,out2,out3;<br>
+reg out0,out1,out2,out3;<br>
+input s1,s0,in;<br>
+always @(in or s1 or s0)<br>
+case({s1,s0})<br>
+2'b00: begin out0=in;out1=1'bz;out2=1'bz;out3=1'bz; end<br>
+2'b01: begin out0=1'bz;out1=in;out2=1'bz;out3=1'bz; end<br>
+2'b10: begin out0=1'bz;out1=1'bz;out2=in;out3=1'bz; end<br>
+2'b11: begin out0=1'bz;out1=1'bz;out2=1'bz;out3=in; end<br>
+2'b1x,2'b0x,2'bx1,2'bx0,2'bxx,2'bzx,2'bxz : begin<br>
+out0=1'bx;out1=1'bx;out2=1'bx;out3=1'bx; end<br>
+2'b1z,2'b0z,2'bz1,2'bz0,2'bzz : begin <br>
+out0=1'bz;out1=1'bz;out2=1'bz;out3=1'bz; end<br>
+default :$display("Invalid select signal");<br>
+endcase<br>
+endmodule<br>
+
+<br>
+<br>
+
+b. Generic logic gate netlist using yosys - 
+
+<img width="1470" alt="Screenshot 2024-11-10 at 11 57 48 PM" src="https://github.com/user-attachments/assets/1ea80327-96e4-4927-baba-280c1c09dd8a">
+
+<br>
+<br>
+
+c. Technlogy mapping - 
+
+I used a 45nm pdk and typical process to do technology mapping. 
+I created a tcl script instead of giving individual commands. The script is -<br>
+
+#read modules from Verilog file<br>
+ read_verilog top.v<br>
+
+hierarchy -check -top top<br>
+
+#translate processes to netlists<br>
+proc<br>
+
+#mapping to internal cell library<br>
+ techmap<br>
+
+#mapping flip-flops to NangateOpenCellLibrary_typical.lib<br>
+#for eg. always block<br>
+
+dfflibmap -liberty NangateOpenCellLibrary_typical.lib<br>
+
+#mapping logic to NangateOpenCellLibrary_typical.lib<br>
+#for eg. assign block<br>
+abc -liberty NangateOpenCellLibrary_typical.lib<br>
+
+ #remove unused cells and wires<br>
+clean<br>
+#Write the current design to a Verilog file<br>
+write_verilog -noattr synth_example.v<br>
+
+![synth 2024-11-11 at 00 03 51](https://github.com/user-attachments/assets/16a26335-7ee8-449a-9680-9e3ebfe7026a)
+
+<br>
+<br>
+
+d. Chip area calculation -
+
+Using the command : stat -liberty NangateOpenCellLibrary_typical.lib
+
+<img width="1470" alt="Screenshot 2024-11-11 at 12 08 26 AM" src="https://github.com/user-attachments/assets/b8f6749e-a786-4904-8e58-0c81355ed376">
+
 
 
 
