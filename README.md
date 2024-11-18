@@ -226,7 +226,7 @@ c. Area -
 
 # 8 Overflow detector :
 
-a. Generic logic gate -
+a. Generic logic gate -<br>
 I used different set of commands this time. Instead of generating a internal model, I generated a generic logic gate netlist using the following command - 
 read_verilog top.v; <br>synth -top top;<br> write_verilog top_netlist.v<br>
 
@@ -235,12 +235,12 @@ read_verilog top.v; <br>synth -top top;<br> write_verilog top_netlist.v<br>
 <br>
 <br>
 
-b. Generic gate logic optimization - 
+b. Generic gate logic optimization - <br>
 read_verilog mydesign.v;<br> synth; <br> opt; <br> clean; <br> write_verilog mydesign_optimized.v<br> 
 <img width="1470" alt="Screenshot 2024-11-19 at 1 22 45 AM" src="https://github.com/user-attachments/assets/b9f24319-cde3-4d27-be94-7617903a24d6">
 
 
-c. Technology mapping - 
+c. Technology mapping - <br>
 I also updated the technology mapping commands to get a better view of the gates and mapping - <br>
 read_liberty -lib NangateOpenCellLibrary_typical.lib<br>
 read_verilog top.v<br>
@@ -249,7 +249,7 @@ dfflibmap -liberty NangateOpenCellLibrary_typical.lib<br>
 abc -liberty NangateOpenCellLibrary_typical.lib<br>
 write_verilog -noattr top_mapped.v<br>
 
-<img width="1470" alt="Screenshot 2024-11-19 at 1 13 18 AM" src="https://github.com/user-attachments/assets/c3a4e68c-74c8-4dbc-8b2d-c9de89eff335">
+<img width="1470" alt="Screenshot 2024-11-19 at 1 13 18 AM" src="https://github.com/user-attachments/assets/c3a4e68c-74c8-4dbc-8b2d-c9de89eff335"><br>
 
 <br>
 <br>
@@ -261,11 +261,11 @@ d. Area -
 <br>
 <br>
 
-d. Logic Optimization - 
-Commands opt was given
-Also resource sharing was made possible using the command share -aggressive
-<img width="517" alt="Screenshot 2024-11-19 at 12 59 26 AM" src="https://github.com/user-attachments/assets/7b4d2fbe-9660-466c-88e7-f08abf28544f">
-<img width="403" alt="Screenshot 2024-11-19 at 12 59 53 AM" src="https://github.com/user-attachments/assets/c5991bfe-70c4-4090-9800-c8a6f37a2a40">
+d. Logic Optimization - <br>
+Commands opt was given<br>
+Also resource sharing was made possible using the command share -aggressive<br>
+<img width="517" alt="Screenshot 2024-11-19 at 12 59 26 AM" src="https://github.com/user-attachments/assets/7b4d2fbe-9660-466c-88e7-f08abf28544f"><br>
+<img width="403" alt="Screenshot 2024-11-19 at 12 59 53 AM" src="https://github.com/user-attachments/assets/c5991bfe-70c4-4090-9800-c8a6f37a2a40"><br>
 
 SAT word used above stands for Satisfiability solvers. SAT solvers and ROBDD are used extensively for represetation of Boolean functions. They are canonical and compact and make optimization and verification of circuits easier. <br>
 
