@@ -224,8 +224,36 @@ c. Area -
 <br>
 <br>
 
-# 8 
+# 8 Overflow detector :
 
+a. Generic logic gate -
+<img width="1468" alt="Screenshot 2024-11-19 at 12 54 17 AM" src="https://github.com/user-attachments/assets/52b03718-1d61-4abf-b609-7c979abb938c">
+
+<br>
+<br>
+
+b. Technology mapping - 
+<img width="43" alt="Screenshot 2024-11-19 at 12 55 33 AM" src="https://github.com/user-attachments/assets/c95ed249-89ca-4867-93dd-6a957bb25fd8">
+
+<br>
+<br>
+
+c. Area - 
+<img width="431" alt="Screenshot 2024-11-19 at 12 56 17 AM" src="https://github.com/user-attachments/assets/ae0092c4-b795-4190-92ef-eaa5b3f77157">
+
+
+<br>
+<br>
+
+d. Logic Optimization - 
+Commands opt was given
+Also resource sharing was made possible using the command share -aggressive
+<img width="517" alt="Screenshot 2024-11-19 at 12 59 26 AM" src="https://github.com/user-attachments/assets/7b4d2fbe-9660-466c-88e7-f08abf28544f">
+<img width="403" alt="Screenshot 2024-11-19 at 12 59 53 AM" src="https://github.com/user-attachments/assets/c5991bfe-70c4-4090-9800-c8a6f37a2a40">
+
+SAT word used above stands for Satisfiability solvers. SAT solvers and ROBDD are used extensively for represetation of Boolean functions. They are canonical and compact and make optimization and verification of circuits easier. <br>
+
+<img width="45" alt="Screenshot 2024-11-19 at 12 58 04 AM" src="https://github.com/user-attachments/assets/043013c3-c8df-49c3-a9e3-11ad331ff8a4">
 
 
 
