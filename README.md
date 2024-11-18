@@ -16,10 +16,10 @@ endmodule<br>
 <br>
 <br>
 
-b. Generic logic gate netlist using yosys - 
+b. Internal model representation - 
+This is known as syntax tree. This is the first stage of RTL synthesis known as parsing. 
 
 <img width="1470" alt="Screenshot 2024-11-10 at 1 47 14 AM" src="https://github.com/user-attachments/assets/731341ac-6bba-4c05-b617-81865203f821">
-This is generic logic gate, we can map this to a technology. 
 <br>
 <br>
 
@@ -71,7 +71,7 @@ endmodule<br>
 <br>
 <br>
 
-b. Generic logic gate netlist using yosys - 
+b. Internal model representation - 
 
 <img width="1470" alt="Screenshot 2024-11-10 at 11 57 48 PM" src="https://github.com/user-attachments/assets/1ea80327-96e4-4927-baba-280c1c09dd8a">
 
@@ -125,7 +125,7 @@ Using the command : stat -liberty NangateOpenCellLibrary_typical.lib
 
 # 3. FULL ADDER (4 BIT) using structural abstraction :
 
-a. Generic logic netlist - 
+a. Internal model representation - 
 
 <img width="1470" alt="Screenshot 2024-11-11 at 12 23 16 AM" src="https://github.com/user-attachments/assets/18489a2b-d32e-4685-9d19-f5c98d74ba7d">
 
@@ -134,7 +134,7 @@ a. Generic logic netlist -
 
 # 4. FULL ADDER (4 BIT) using dataflow :
 
-a. Generic logic netlist - 
+a. Internal model representation - 
 
 <img width="1470" alt="Screenshot 2024-11-11 at 12 36 56 AM" src="https://github.com/user-attachments/assets/55c9a973-6845-4b5b-8cec-e18fca41b33b">
 
@@ -157,7 +157,7 @@ c. Area -
 
 # 5. Edge detector :
 
-a. Generic logic netlist - 
+a. Internal model representation - 
 
 <img width="1470" alt="Screenshot 2024-11-11 at 12 43 47 AM" src="https://github.com/user-attachments/assets/5895f55d-cce2-4256-9618-82a9ad2ba610">
 
@@ -180,7 +180,7 @@ c. Area -
 
 # 6. BCD counter :
 
-a. Generic logic gates - 
+a. Internal model representation - 
 
 <img width="1470" alt="Screenshot 2024-11-11 at 12 54 23 AM" src="https://github.com/user-attachments/assets/e7001db8-bc9c-4c30-bdbb-c47fc49965f7">
 
@@ -203,7 +203,7 @@ c. Area -
 
 # 7. Carry look ahead adder (4 bit) :
 
-a. Generic logic gate -
+a. Internal model representation -
 
 <img width="1470" alt="Screenshot 2024-11-11 at 1 00 15 AM" src="https://github.com/user-attachments/assets/5167be3c-912b-4a95-bc35-0afae0f4bab0">
 
@@ -227,18 +227,34 @@ c. Area -
 # 8 Overflow detector :
 
 a. Generic logic gate -
-<img width="1468" alt="Screenshot 2024-11-19 at 12 54 17 AM" src="https://github.com/user-attachments/assets/52b03718-1d61-4abf-b609-7c979abb938c">
+I used different set of commands this time. Instead of generating a internal model, I generated a generic logic gate netlist using the following command - 
+read_verilog top.v; <br>synth -top top;<br> write_verilog top_netlist.v<br>
+
+<img width="1405" alt="Screenshot 2024-11-19 at 1 06 44 AM" src="https://github.com/user-attachments/assets/0cbb2349-f7b1-4751-9ae1-4e84c5a8f895">
 
 <br>
 <br>
 
-b. Technology mapping - 
-<img width="43" alt="Screenshot 2024-11-19 at 12 55 33 AM" src="https://github.com/user-attachments/assets/c95ed249-89ca-4867-93dd-6a957bb25fd8">
+b. Generic gate logic optimization - 
+read_verilog mydesign.v;<br> synth; <br> opt; <br> clean; <br> write_verilog mydesign_optimized.v<br> 
+<img width="1470" alt="Screenshot 2024-11-19 at 1 22 45 AM" src="https://github.com/user-attachments/assets/b9f24319-cde3-4d27-be94-7617903a24d6">
+
+
+c. Technology mapping - 
+I also updated the technology mapping commands to get a better view of the gates and mapping - <br>
+read_liberty -lib NangateOpenCellLibrary_typical.lib<br>
+read_verilog top.v<br>
+synth -top top<br>
+dfflibmap -liberty NangateOpenCellLibrary_typical.lib<br>
+abc -liberty NangateOpenCellLibrary_typical.lib<br>
+write_verilog -noattr top_mapped.v<br>
+
+<img width="1470" alt="Screenshot 2024-11-19 at 1 13 18 AM" src="https://github.com/user-attachments/assets/c3a4e68c-74c8-4dbc-8b2d-c9de89eff335">
 
 <br>
 <br>
 
-c. Area - 
+d. Area - 
 <img width="431" alt="Screenshot 2024-11-19 at 12 56 17 AM" src="https://github.com/user-attachments/assets/ae0092c4-b795-4190-92ef-eaa5b3f77157">
 
 
