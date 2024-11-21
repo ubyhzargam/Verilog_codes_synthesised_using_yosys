@@ -43,8 +43,8 @@ clean<br>
 write_verilog -noattr synth.v<br>
 
 I got the following netlist - 
+<img width="1462" alt="Screenshot 2024-11-21 at 10 12 22 PM" src="https://github.com/user-attachments/assets/96b12e00-e9a2-4a05-b614-4386d08f4f55">
 
-<img width="1470" alt="Screenshot 2024-11-10 at 3 12 53 AM" src="https://github.com/user-attachments/assets/407682e9-d489-475e-a390-94cd7820347e">
 
 # 2. 4:1 demux
 
