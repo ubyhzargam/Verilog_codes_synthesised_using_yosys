@@ -254,7 +254,7 @@ write_verilog -noattr top_mapped.v<br>
 <br>
 <br>
 
-d. Area - 
+d. Area - <br>
 <img width="431" alt="Screenshot 2024-11-19 at 12 56 17 AM" src="https://github.com/user-attachments/assets/ae0092c4-b795-4190-92ef-eaa5b3f77157">
 
 
