@@ -215,7 +215,7 @@ a. Internal model representation -
 
 b. Technology mapping - 
 
-<img width="165" alt="Screenshot 2024-11-11 at 1 01 34 AM" src="https://github.com/user-attachments/assets/50821000-d100-4788-aee5-68a3f59a1c3a">
+<img width="1079" alt="Screenshot 2024-11-21 at 10 33 02 PM" src="https://github.com/user-attachments/assets/0a541863-c19c-44b8-89c2-5c41c910f8b7">
 
 <br>
 <br>
@@ -247,18 +247,19 @@ c. Technology mapping - <br>
 I also updated the technology mapping commands to get a better view of the gates and mapping - <br>
 read_liberty -lib NangateOpenCellLibrary_typical.lib<br>
 read_verilog top.v<br>
-synth -top top<br>
+proc techmap<br>
 dfflibmap -liberty NangateOpenCellLibrary_typical.lib<br>
 abc -liberty NangateOpenCellLibrary_typical.lib<br>
 write_verilog -noattr top_mapped.v<br>
 
-<img width="1470" alt="Screenshot 2024-11-19 at 1 13 18 AM" src="https://github.com/user-attachments/assets/c3a4e68c-74c8-4dbc-8b2d-c9de89eff335"><br>
+<img width="1463" alt="Screenshot 2024-11-21 at 10 34 35 PM" src="https://github.com/user-attachments/assets/22fc85d9-13ce-46e9-ba7e-71a4dfa2b032">
+br>
 
 <br>
 <br>
 
 d. Area - <br>
-<img width="431" alt="Screenshot 2024-11-19 at 12 56 17 AM" src="https://github.com/user-attachments/assets/ae0092c4-b795-4190-92ef-eaa5b3f77157">
+<img width="428" alt="Screenshot 2024-11-21 at 10 35 25 PM" src="https://github.com/user-attachments/assets/d38e1fa4-8fbb-4c18-89a9-e65d71c50349">
 
 
 <br>
