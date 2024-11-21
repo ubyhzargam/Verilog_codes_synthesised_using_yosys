@@ -296,7 +296,7 @@ d. Technology mapped optimised netlist - <br>
 <br>
 <br>
 
-e. Area - 
+e. Area - <br>
 <img width="462" alt="Screenshot 2024-11-21 at 9 49 42 PM" src="https://github.com/user-attachments/assets/dd2f1b8f-464d-43dd-8239-39facaef69cb">
 
-  
+<br><br>  
