@@ -271,7 +271,32 @@ SAT word used above stands for Satisfiability solvers. SAT solvers and ROBDD are
 
 <img width="45" alt="Screenshot 2024-11-19 at 12 58 04 AM" src="https://github.com/user-attachments/assets/043013c3-c8df-49c3-a9e3-11ad331ff8a4">
 
+# 9 FSM to detect more than one 1s in the last 3 samples :
 
+a. Internal model representation - <br>
+<img width="492" alt="Screenshot 2024-11-21 at 9 21 12 PM" src="https://github.com/user-attachments/assets/6d7dd888-da26-4e37-8d08-db01b92c01e1">
 
+<br>
+<br>
+b. Generic logic gate -<br>
+
+<img width="1470" alt="Screenshot 2024-11-21 at 9 22 56 PM" src="https://github.com/user-attachments/assets/f69167f7-08a3-4f0b-a330-73b0c9c2ddcb">
+<br>
+<br>
+
+c. Optimized Generic logic gate -<br>
+<img width="1470" alt="Screenshot 2024-11-21 at 9 25 01 PM" src="https://github.com/user-attachments/assets/3443c5bb-d239-45ae-82ef-3d2798c089af">
+
+<br>
+<br>
+
+d. Technology mapped optimised netlist - <br>
+<img width="1470" alt="Screenshot 2024-11-21 at 9 46 27 PM" src="https://github.com/user-attachments/assets/8a18945b-6584-47c1-97c6-638385e6309e">
+
+<br>
+<br>
+
+e. Area - 
+<img width="462" alt="Screenshot 2024-11-21 at 9 49 42 PM" src="https://github.com/user-attachments/assets/dd2f1b8f-464d-43dd-8239-39facaef69cb">
 
   
