@@ -16,6 +16,7 @@ endmodule<br>
 <br>
 <br>
 
+
 b. Internal model representation - 
 This is known as syntax tree. This is the first stage of RTL synthesis known as parsing. 
 
@@ -108,7 +109,7 @@ clean<br>
 #Write the current design to a Verilog file<br>
 write_verilog -noattr synth_example.v<br>
 
-<img width="298" alt="Screenshot 2024-11-11 at 12 12 55 AM" src="https://github.com/user-attachments/assets/2b0e954b-a17e-4e9b-8b36-849ed5abaf83">
+<img width="1462" alt="Screenshot 2024-11-21 at 10 19 35 PM" src="https://github.com/user-attachments/assets/af6ab3e5-146b-4d97-bdb7-f07b972dfe25">
 
 
 <br>
@@ -142,8 +143,8 @@ a. Internal model representation -
 <br>
 
 b. Technlogy mapping - 
+<img width="1455" alt="Screenshot 2024-11-21 at 10 23 32 PM" src="https://github.com/user-attachments/assets/93afcc2f-45fb-47c6-bf80-99142e4df18f">
 
-<img width="127" alt="Screenshot 2024-11-11 at 12 38 33 AM" src="https://github.com/user-attachments/assets/ef88c6a1-0333-4cf9-ba34-24a19636c6ee">
 
 <br>
 <br>
