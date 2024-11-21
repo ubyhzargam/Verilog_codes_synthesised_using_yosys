@@ -166,14 +166,16 @@ a. Internal model representation -
 
 b. Technology mapping - 
 
-<img width="88" alt="Screenshot 2024-11-11 at 12 46 24 AM" src="https://github.com/user-attachments/assets/f242bdb9-9634-4170-89fa-49cced2bb01d">
+<img width="769" alt="Screenshot 2024-11-21 at 10 26 43 PM" src="https://github.com/user-attachments/assets/d638ceea-d648-440c-8551-ec6d0b697b30">
+
 
 <br>
 <br>
 
 c. Area - 
 
-<img width="1470" alt="Screenshot 2024-11-11 at 12 51 37 AM" src="https://github.com/user-attachments/assets/3a8ce312-39d5-4701-a22f-7e9afa07651a">
+<img width="523" alt="Screenshot 2024-11-21 at 10 27 22 PM" src="https://github.com/user-attachments/assets/8a9bbc7f-6084-4019-8c44-dcf6db5a61e4">
+
 
 <br>
 <br>
@@ -189,14 +191,15 @@ a. Internal model representation -
 
 b. Technology mapping - 
 
-<img width="159" alt="Screenshot 2024-11-11 at 12 55 54 AM" src="https://github.com/user-attachments/assets/728cbcad-f48f-4d77-96ed-44e38fb1c3b8">
+<img width="1464" alt="Screenshot 2024-11-21 at 10 30 35 PM" src="https://github.com/user-attachments/assets/de42d1b8-9eac-4c93-a72e-f263787fd237">
+
 
 <br>
 <br>
 
 c. Area - 
+<img width="493" alt="Screenshot 2024-11-21 at 10 30 54 PM" src="https://github.com/user-attachments/assets/7c2bb661-5ce4-49c2-a0c3-cc2ebcecb18f">
 
-<img width="1470" alt="Screenshot 2024-11-11 at 12 56 53 AM" src="https://github.com/user-attachments/assets/a047ac17-8f1c-448e-a26e-e62d8f23f645">
 
 <br>
 <br>
