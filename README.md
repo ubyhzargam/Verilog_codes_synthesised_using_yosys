@@ -150,8 +150,7 @@ b. Technlogy mapping -
 <br>
 
 c. Area - 
-
-<img width="1470" alt="Screenshot 2024-11-11 at 12 39 27 AM" src="https://github.com/user-attachments/assets/cb4b5b68-3976-4daa-96a6-7b2cfb423e78">
+<img width="559" alt="Screenshot 2024-11-21 at 10 25 18 PM" src="https://github.com/user-attachments/assets/93fa8f8a-7e47-473f-8bfc-d85bbef7c85b">
 
 <br>
 <br>
