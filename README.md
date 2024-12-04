@@ -310,3 +310,5 @@ e. Area - <br>
 <img width="462" alt="Screenshot 2024-11-21 at 9 49 42 PM" src="https://github.com/user-attachments/assets/dd2f1b8f-464d-43dd-8239-39facaef69cb">
 
 <br><br>  
+This is the end of repository, the learning about yosys is complete. After this point it is very easy to go look up their website and read what individual command does and then use it. With this knowledge, it should be easy to synthesize any circuit easily.
+<br><br>
